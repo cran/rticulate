@@ -29,7 +29,7 @@ plot_polar_smooths(
 
 \item{facet_terms}{An unquoted formula with the terms used for faceting.}
 
-\item{conditions}{A list of quosures with \link[rlang]{quos} specifying the levels to plot from the model terms not among \code{series}, \code{comparison}, or \code{facet_terms}.}
+\item{conditions}{A list of quosures with \code{quos} specifying the levels to plot from the model terms not among \code{series}, \code{comparison}, or \code{facet_terms}.}
 
 \item{exclude_random}{Whether to exclude random smooths (the default is \code{TRUE}).}
 
@@ -49,7 +49,7 @@ It plots the smooths of a polar GAM fitted with \code{polar_gam()}.
 }
 \examples{
 \donttest{
-library(tidyverse)
+library(dplyr)
 tongue_it01 <- filter(tongue, speaker == "it01")
 pgam <- polar_gam(Y ~ s(X, by = as.factor(label)), data = tongue_it01)
 

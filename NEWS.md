@@ -1,3 +1,14 @@
+# rticulate v1.7.3
+
+## Added
+
+* Zenodo DOI in Readme, plus other Readme updates.
+
+## Developer
+
+* Fix CRAN notes about HTML5.
+
+
 # rticulate v1.7.2
 
 ## Added

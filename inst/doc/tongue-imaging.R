@@ -1,8 +1,10 @@
 ## ----setup, echo=FALSE, include=FALSE-----------------------------------------
 knitr::opts_chunk$set(out.width = "300px", fig.align = "center", dpi = 300)
-library(tidyverse)
-theme_set(theme_bw())
+library(readr)
+library(dplyr)
 library(stringr)
+library(ggplot2)
+theme_set(theme_bw())
 library(rticulate)
 
 ## ----load, eval=FALSE---------------------------------------------------------
@@ -37,7 +39,7 @@ tongue
 ## ----join---------------------------------------------------------------------
 stimuli <- read_csv(system.file("extdata", "stimuli.csv", package = "rticulate"))
 
-tongue <- mutate(tongue, word = stringr::word(prompt, 2)) %>%
+tongue <- mutate(tongue, word = word(prompt, 2)) %>%
     left_join(y = stimuli) %>%
     mutate_if(is.character, as.factor)
 
