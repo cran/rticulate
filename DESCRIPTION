@@ -1,8 +1,8 @@
 Package: rticulate
 Type: Package
 Title: Ultrasound Tongue Imaging
-Version: 1.7.3
-Date: 2022-09-04
+Version: 1.7.4
+Date: 2024-12-06
 Authors@R: c(person(given = "Stefano",
                     family = "Coretta",
                     email = paste0("stefano.coretta", "@", "gmail.com"),
@@ -21,10 +21,10 @@ Imports: dplyr, ggplot2, glue, magrittr, mgcv, purrr, readr, rlang,
 RoxygenNote: 7.2.1
 Suggests: knitr, rmarkdown, stringr
 VignetteBuilder: knitr
-Language: en_GB
+Language: en-US
 License: MIT + file LICENSE
 NeedsCompilation: no
-Packaged: 2022-09-04 16:08:01 UTC; ste
+Packaged: 2024-12-06 17:12:15 UTC; ste
 Author: Stefano Coretta [aut, cre]
 Repository: CRAN
-Date/Publication: 2022-09-04 16:20:02 UTC
+Date/Publication: 2024-12-06 17:30:02 UTC

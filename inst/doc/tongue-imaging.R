@@ -8,7 +8,7 @@ theme_set(theme_bw())
 library(rticulate)
 
 ## ----load, eval=FALSE---------------------------------------------------------
-#  library(rticulate)
+# library(rticulate)
 
 ## ----columns------------------------------------------------------------------
 columns <- c(
