@@ -24,14 +24,6 @@ polar_place <- polar_gam(
 )
 summary(polar_place)
 
-## ----plot-smooths-------------------------------------------------------------
-plot_polar_smooths(
-  polar_place,
-  X,
-  c2_place
-) +
-  theme(legend.position = "top")
-
 ## ----polar-multi--------------------------------------------------------------
 tongue_it05 <- filter(tongue, speaker == "it05", fan_line < 38) %>% droplevels()
 
@@ -42,15 +34,6 @@ polar_multi <- polar_gam(
   data = tongue_it05
 )
 summary(polar_multi)
-
-## ----plot-smooths-2-----------------------------------------------------------
-plot_polar_smooths(
-  polar_multi,
-  X,
-  c2_place,
-  facet_terms = vowel
-) +
-  theme(legend.position = "top")
 
 ## ----polar-place-2------------------------------------------------------------
 polar_2 <- polar_gam(

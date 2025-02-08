@@ -31,7 +31,7 @@ columns <- c(
 # read_aaa("~/Desktop/splines.tsv", columns)
 file_path <- system.file("extdata", "it01.tsv", package = "rticulate")
 
-tongue <- read_aaa(file_path, columns)
+tongue <- read_aaa(file_path, knots = 42, column_names = columns)
 
 ## ----tibble-------------------------------------------------------------------
 tongue
@@ -64,7 +64,7 @@ plot_tongue(tongue, geom = "point", alpha = 0.5) +
     theme(legend.position = "bottom")
 
 ## ----plot-palate--------------------------------------------------------------
-palate <- read_aaa(system.file("extdata", "it01-palate.tsv", package = "rticulate"), columns)
+palate <- read_aaa(system.file("extdata", "it01-palate.tsv", package = "rticulate"), knots = 42, column_names = columns)
 
 filter(tongue, label == "max_TD") %>%
     plot_tongue(palate = palate, alpha = 0.5) + aes(group = rec_date)
@@ -72,10 +72,10 @@ filter(tongue, label == "max_TD") %>%
 ## ----read-multiple------------------------------------------------------------
 tongue2 <- list.files(
     path = system.file("extdata", package = "rticulate"),
-    pattern = "*\\d.tsv",
+    pattern = "*\\d{2}.tsv",
     full.names = TRUE
     ) %>%
-    read_aaa(., columns)
+    read_aaa(., knots = 42, column_names = columns)
 
 ## ----plot-speakers------------------------------------------------------------
 plot_tongue(tongue2, alpha = 0.5) +
