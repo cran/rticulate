@@ -4,16 +4,17 @@
 \name{rticulate-package}
 \alias{rticulate}
 \alias{rticulate-package}
-\title{rticulate: Ultrasound Tongue Imaging}
+\title{rticulate: Articulatory Data Processing in R}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A tool for processing Articulate Assistant Advanced™ (AAA) export files and plot tongue contour data from any system.
+A tool for processing Articulate Assistant Advanced™ (AAA) ultrasound tongue imaging data and Carstens AG500/1 electro-magnetic articulographic data.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/stefanocoretta/rticulate}
+  \item \url{https://stefanocoretta.github.io/rticulate/}
   \item Report bugs at \url{https://github.com/stefanocoretta/rticulate/issues}
 }
 

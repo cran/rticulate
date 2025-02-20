@@ -12,7 +12,7 @@
 
 <meta name="author" content="Stefano Coretta" />
 
-<meta name="date" content="2025-02-08" />
+<meta name="date" content="2025-02-20" />
 
 <title>Transform spline coordinates between cartesian and polar</title>
 
@@ -342,7 +342,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">Transform spline coordinates between
 cartesian and polar</h1>
 <h4 class="author">Stefano Coretta</h4>
-<h4 class="date">2025-02-08</h4>
+<h4 class="date">2025-02-20</h4>
 
 
 
@@ -390,7 +390,7 @@ will work, so you can just use
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>polar <span class="ot">&lt;-</span> tongue <span class="sc">%&gt;%</span></span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>    <span class="fu">filter</span>(speaker <span class="sc">==</span> <span class="st">&quot;it01&quot;</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>    <span class="fu">transform_coord</span>()</span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt; The origin is x = 14.3901267816422, y = -65.2315420525846.</span></span></code></pre></div>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt; The origin is x = 14.3901267816422, y = -65.2315420525847.</span></span></code></pre></div>
 <p>The function returns a data set with two new columns:
 <code>radius</code> and <code>theta</code>. It also prints the
 calculated origin.</p>
